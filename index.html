@@ -36,9 +36,35 @@
     <div class="content">
       <!--This is content card 1-->
       <div class="card">
-        <h1>Javascript counter</h1>
-        <p>Press the button, for it to count downwards or upwards</p>
-        
+        <h1>Color Pallete</h1>
+        <p>This is the asigned color pallete for this website, click on each color you want to change</p>
+        <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9A1XcRdSspc3endfB8JUsRSDRP9VhnidWg&s">
+      
+      </div>
+  
+      <div class="mySlides">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/LpjsMRttAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+      </div>
+  
+      <div class="mySlides">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2et6UNkzRg2tlUlPcEXEoFU5FyzUReCeA8w&s">
+      </div>
+  
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
       </div>
       <!--This is content card 2-->
       <div class="card">
@@ -71,6 +97,37 @@
       <p>Phone: 385-384-6927</p>
     </div>
   </footer>
+  <script>
+    let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+  </script>
 </body>
 
 </html>
