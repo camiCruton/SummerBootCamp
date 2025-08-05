@@ -32,7 +32,7 @@
   <main>
 
     <!--Add a picture to your website here.-->
-    <img src="https://cdn.visualwilderness.com/wp-content/uploads/2019/12/Norway-Landscape-Photography-3.jpg" alt="mtn border"></main>a> 
+    
     <div class="content">
       <!--This is content card 1-->
       <div class="card">
@@ -54,7 +54,32 @@
       <div class="mySlides">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2et6UNkzRg2tlUlPcEXEoFU5FyzUReCeA8w&s">
       </div>
-  
+  .slideshow-container {
+    max-width: 500px;
+  }
+  .mySlides{
+    display: none;
+  }
+  .mySlides img{
+    margin-top: 50px;
+    max-width: 500px;
+    max-height: 500px;
+
+  }
+  .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
   </div>
   <br>
   
@@ -126,6 +151,7 @@
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+    
 
   </script>
 </body>
