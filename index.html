@@ -1,6 +1,99 @@
-<header>
-<h1>Camille Scruton</h1>
-<ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page for Camille Scruton Fun Site">
+  <title>Summer Bootcamp Template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Slideshow Container */
+    .slideshow-container {
+      max-width: 500px;
+      margin: auto;
+      position: relative;
+    }
+
+    /* Hide all images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Style the image in the slideshow */
+    .mySlides img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    /* Style the dots */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    /* Active dot and hover effect */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      font-size: 36px;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #333;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .gitHub a, .contact p {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Camille Scruton</h1>
+    <ul>
       <li><a href="./index.html">Home</a></li>
       <li><a href="./pages/about.html">ABOUT ME</a></li>
     </ul>
@@ -8,10 +101,10 @@
 
   <main>
     <div class="content">
-      <!-- Content card 1 -->
+      <!-- Content card 1: Slideshow -->
       <div class="card">
         <h1>Color Palette</h1>
-        <p>This is the assigned color palette for this website. Click on each color you want to change.</p>
+        <p>This is the assigned color palette for this website. Click on each slide to view different colors.</p>
 
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -107,5 +200,3 @@
 </body>
 
 </html>
-      <li><a href="./index.html">Home</a>
-
